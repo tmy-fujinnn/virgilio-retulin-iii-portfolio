@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Virgilio Retulin III | Portfolio v.1</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="nav">
+    <a class="logo" href="#top" id="logo">Tommy</a>
+    <nav class="pills" aria-label="Sections"><a href="#tools">Tools</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#contact">Contact</a></nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" style="padding-top:40px">
+      <div>
+        <h1>Hello, I'm <span class="c" data-cfg="first">Tom!</span><span class="o">.</span></h1>
+        <p class="lead">I'm a BSIT 3rd Year Student From PUP Manila. An Aspiring Developer with an interest in Cloud Computing and Software Development, with the drive towards making change and reliable systems for every Filipino. </p>
+        <div class="cta"><a class="btn fill" href="#projects">See my work</a><a class="btn" href="#contact">Say hello</a></div>
+      </div>
+
+      <div class="stage" id="stage">
+        <button class="blob" id="blob" aria-label="Profile photo. Press to see a fact about me.">
+          <div class="shape" id="front">
+            <img class="profile-image" id="profile-image" src="tommy.jpg" alt="Profile photo">
+            <div class="photo-placeholder" aria-label="Photo placeholder">
+              <svg viewBox="0 0 96 96" aria-hidden="true">
+                <circle cx="48" cy="34" r="17"/>
+                <path d="M15 88c2-19 15-31 33-31s31 12 33 31"/>
+              </svg>
+              <span>Add your photo as <strong>profile.jpg</strong></span>
+            </div>
+          </div>
+        </button>
+        <div class="bubble" id="bubble" role="status">Greetings! Let's get to work.</div>
+      </div>
+      <div class="photo-tools"><span>Press the photo for a fact.</span></div>
+    </section>
+  </main>
+
+  <main>
+    <section id="tools">
+      <h2>Tools &amp; <span>Frameworks I use.</span></h2>
+      <div class="bento">
+        <div class="tile t1"><div><h3>Frontend</h3><small>Basic UI/UX and User Interaction.</small></div><div class="chips"><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span></div></div>
+        <div class="tile t2"><div><h3>Backend &amp; data</h3><small>Proficient Languages and databases used to make things work.</small></div><div class="chips"><span class="chip">Python</span><span class="chip">C</span><span class="chip">Java</span><span class="chip">MySQL</span></div></div>
+        <div class="tile t3"><div><h3>Tools</h3><small>IDE, Version Control, and Development Environment.</small></div><div class="chips"><span class="chip">VS Code</span><span class="chip">GitHub</span><span class="chip">Capcut</span><span class="chip">Canva</span></div></div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects <span>Made</span></h2>
+      <div class="projects">
+        <article class="proj" style="--c:var(--cyan)">
+          <h3>BIR eFPS redesign</h3>
+          <p>A redesign of the outdated, complicated, error-proned, BIR eFPS website with clearer layouts and smoother interactions, so filing feels easier.</p>
+          <div class="chips"><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span></div>
+          <a class="go" href="https://group4-hci-bir-efps-redesign.vercel.app/">View project</a>
+        </article>
+        <article class="proj" style="--c:var(--pink)">
+          <h3>QEasy ID application system</h3>
+          <p>A CRUD system for handling ID applications and records: create, view, update and delete entries in one place. (<i>Not Deployed</i>)</p>
+          <div class="chips"><span class="chip">Java</span><span class="chip">MySQL</span></div>
+          <a class="go" href="https://github.com/tmy-fujinnn/java-final-project">View project</a>
+        </article>
+        <article class="proj" style="--c:var(--sun)">
+          <h3>Basic Weather App</h3>
+          <p>Search the weather of places around the world with WeatherAPI. I mainly use it to check conditions across the Philippines.</p>
+          <div class="chips"><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span></div>
+          <a class="go" href="https://github.com/tmy-fujinnn/tmy-weather-app">View project</a>
+        </article>
+        <article class="proj" style="--c:var(--violet)">
+          <h3>Metro Manila Traffic Incident Analytics</h3>
+          <p>A desktop data analysis dashboard analyzing traffic incident records across Metro Manila, producing statistical visual trends and clean spatial data breakdowns. Try it on your own device!</p>
+          <div class="chips"><span class="chip">Python</span><span class="chip">Pandas</span><span class="chip">Matplotlib</span><span class="chip">Tkinter</span></div>
+          <a class="go" href="https://github.com/tmy-fujinnn/FINAL-PROJECT" aria-label="View Traffic Analytics project">View project</a>
+        </article>
+        <article class="proj" style="--c:var(--pink)">
+          <h3>NCR Wet Market Price Index</h3>
+          <p>A time series analysis of wet market price inflation in Metro Manila using PSA data, forecasting prices six months ahead and comparing supply-shock scenarios.</p>
+          <div class="chips"><span class="chip">Python</span><span class="chip">Pandas</span><span class="chip">NumPy</span><span class="chip">Matplotlib</span></div>
+          <a class="go" href="https://github.com/tmy-fujinnn/QMMS" aria-label="View NCR Wet Market Price Index">View project</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="certs">
+  <h2>Courses &amp; <span>certifications</span></h2>
+  <div class="certs">
+    <article class="cert" style="--c:var(--cyan)">
+      <span class="yr">2026</span>
+      <h3>Workato Foundations | Level 2 Certification</h3>
+      <div class="by">Workato Academy</div>
+      <a href="https://drive.google.com/file/d/1-EAzJZllIrCPSbwnUTQr4KzGfjqRpeIn/view?usp=sharing" aria-label="View credential">View credential</a>
+    </article>
+    <article class="cert" style="--c:var(--cyan)">
+      <span class="yr">2026</span>
+      <h3>Workato Foundations | Level 1 Certification</h3>
+      <div class="by">Workato Academy</div>
+      <a href="https://drive.google.com/file/d/1Q1oBO2DtKqJvfDSl3GH0g5lIsT_sIBqF/view?usp=sharing" aria-label="View credential">View credential</a>
+    </article>
+    <article class="cert" style="--c:var(--cyan)">
+      <span class="yr">2026</span>
+      <h3>Networking Basics | Certification</h3>
+      <div class="by">Cisco Networking Academy</div>
+      <a href="https://drive.google.com/file/d/1Q1oBO2DtKqJvfDSl3GH0g5lIsT_sIBqF/view?usp=sharing" aria-label="View credential">View credential</a>
+    </article>
+    <article class="cert" style="--c:var(--cyan)">
+      <span class="yr">2026</span>
+      <h3>Networking Basics | Certification</h3>
+      <div class="by">Cisco Networking Academy</div>
+      <a href="https://drive.google.com/file/d/1cecsGTtsgv9zlRUlCPYjC-HlU4FAhE2m/view?usp=sharing" aria-label="View credential">View credential</a>
+    </article>
+    <article class="cert" style="--c:var(--cyan)">
+      <span class="yr">2026</span>
+      <h3>HTML Essentials | Certification</h3>
+      <div class="by">DICT - Cisco Networking Academy</div>
+      <a href="https://drive.google.com/file/d/10fnsYJ1igd6KldQfZPV8h8fCzHVBNyz_/view?usp=sharing" aria-label="View credential">View credential</a>
+    </article>
+    <article class="cert" style="--c:var(--cyan)">
+      <span class="yr">2026</span>
+      <h3>Understanding Cloud Computing | Course</h3>
+      <div class="by">DataCamp</div>
+      <a href="https://www.datacamp.com/completed/statement-of-accomplishment/course/a8cd20da64d50efb24513adba5e160fa632ed55a?utm_medium=organic_social&utm_campaign=sharewidget&utm_content=soa" aria-label="View credential">View credential</a>
+    </article>
+    <article class="cert" style="--c:var(--pink)">
+      <span class="yr">2025</span>
+      <h3>Introduction to Python | Course</h3>
+      <div class="by">DataCamp</div>
+      <a href="https://www.datacamp.com/completed/statement-of-accomplishment/course/0a95c7fda8408f086bbf86db4fac5f16dce307bc?utm_medium=organic_social&utm_campaign=sharewidget&utm_content=soa" aria-label="View credential">View credential</a>
+    </article>
+    <article class="cert" style="--c:var(--sun)">
+      <span class="yr">2024</span>
+      <h3>Introduction to Cybersecurity | Certification</h3>
+      <div class="by">Cisco Networking Academy</div>
+      <a href="https://drive.google.com/file/d/1vA1isb-SBUh5XGYErWR5Sk7HHmzz72CL/view?usp=sharing" aria-label="View credential">View credential</a>
+    </article>
+    <article class="cert" style="--c:var(--sun)">
+      <span class="yr">2024</span>
+      <h3>Introduction to IoT | Certification</h3>
+      <div class="by">Cisco Networking Academy</div>
+      <a href="https://drive.google.com/file/d/1LFkSOaH8Ux6jJ5Q8KPcBWnqwART1uz63/view?usp=sharing" aria-label="View credential">View credential</a>
+    </article>
+  </div>
+</section>
+
+    <section id="experience">
+      <h2>My <span>Experience and Leadership</span></h2>
+      <div class="line">
+        <div class="exp" style="--c:var(--violet)">
+          <span class="yrs">2026 - Present</span>
+          <h3>Content Writing Head</h3>
+          <div class="org">Google Developer Group on Campus - PUP Manila</div>
+          <p>Experience / role: Responsible for creating and managing written content for the Google Developer Group on Campus - PUP Manila. Responsbile for making captions and written engagement materials used to boost participation and engagement.</p>
+        </div>
+        <div class="exp" style="--c:var(--violet)">
+          <span class="yrs">2026 - Present</span>
+          <h3>Caption Writer and Engagement Analyst</h3>
+          <div class="org">Cisco NetConnect PUP - Manila</div>
+          <p>Experience / role: Wrote captions for social media posts and tracked engagement metrics to see what content worked best, using the findings to improve future posts.</p>
+        </div>
+        <div class="exp ghost" style="--c:var(--coral)">
+          <span class="yrs">2025 - 2026</span>
+          <h3>Cloud Solutions Cadet</h3>
+          <div class="org">Google Developer Group on Campus - PUP Manila</div>
+          <p>Experience / role: Learned the fundamentals of cloud computing and how Google Cloud services fit together in an architecture, through the Google Developer Group’s learning program.</p>
+        </div>
+        <div class="exp ghost" style="--c:var(--coral)">
+          <span class="yrs">2024 - 2026</span>
+          <h3>Skill Builder | Cloud Computing and Infrastructure Department</h3>
+          <div class="org">AWS Cloud Club PUP</div>
+          <p>Experience / role: Learned the basics of cloud computing and how core AWS services work together in an architecture, through guided lessons and hands-on practice.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="contact">
+        <div class="card">
+          <div class="qr" id="qr" aria-label="QR code business card"></div>
+          <div class="who" data-cfg="name"></div>
+          <div class="role" data-cfg="title"></div>
+          <div class="seg" role="group" aria-label="QR code content">
+            <button type="button" aria-pressed="true" data-mode="vcard">Save contact</button>
+          </div>
+        </div>
+        <div>
+          <h3>Let's Connect.</h3>
+          <div class="info" id="info"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>� <span id="yr"></span> <span data-cfg="name"></span></footer>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script src="portfolio.js"></script>
+</body>
+</html>
