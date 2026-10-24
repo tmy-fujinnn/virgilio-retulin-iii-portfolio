@@ -10,7 +10,7 @@ document.querySelectorAll('[data-cfg]').forEach(el=>{
 });
 document.getElementById('logo').textContent = CONFIG.name;
 document.getElementById('yr').textContent = new Date().getFullYear();
-document.title = CONFIG.name + ' Retulin III' + ' | Portfolio';
+document.title = CONFIG.name + ' | Portfolio';
 
 const rows = [['Email',CONFIG.email,'mailto:'+CONFIG.email],['Phone',CONFIG.phone,'tel:'+CONFIG.phone.replace(/\s/g,'')],
   ['GitHub',CONFIG.github,'https://'+CONFIG.github],['Location',CONFIG.location,null]];
@@ -39,7 +39,7 @@ if(profileImage.complete && profileImage.naturalWidth>0) showProfileImage();
 
 /* QR business card */
 const qrBox=document.getElementById('qr'); let qr=null;
-const vcard=()=>['BEGIN:VCARD','VERSION:3.0','FN:'+CONFIG.name + ' Retulin III','TITLE:'+CONFIG.title,'TEL:'+CONFIG.phone,'EMAIL:'+CONFIG.email,'URL:'+ 'https://www.linkedin.com/in/virgilio-retulin-iii/','END:VCARD'].join('\n');
+const vcard=()=>['BEGIN:VCARD','VERSION:3.0','FN:'+CONFIG.name,'TITLE:'+CONFIG.title,'TEL:'+CONFIG.phone,'EMAIL:'+CONFIG.email,'URL:'+ 'https://www.linkedin.com/in/virgilio-retulin-iii/','END:VCARD'].join('\n');
 function drawQR(mode){
   const text = mode==='site' ? CONFIG.site : vcard();
   if(typeof QRCode==='undefined'){qrBox.textContent='QR code could not load.';return;}
